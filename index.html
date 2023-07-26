@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #323232;
+        color: #dadedf;
+        font-family: monospace;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li button {
+        border: none;
+        padding: 0;
+        padding-left: 10px;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      li button:hover {
+        color: red;
+      }
+    </style>
+    <title>Todo</title>
+  </head>
+  <body>
+    <h1>Todo</h1>
+    <form class="task-form">
+      <input type="text" class="task-title" />
+      <button type="submit">Add</button>
+    </form>
+    <ul class="task-list"></ul>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
